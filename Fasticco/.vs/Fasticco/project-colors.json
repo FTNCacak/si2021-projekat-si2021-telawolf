@@ -20,7 +20,17 @@
       "ProjectGuid": "5e98f9ac-debb-465f-a4ee-668defb52f75",
       "DisplayName": "FasticcoBusiness",
       "ColorIndex": 3
+    },
+    "87479c32-3af0-4a98-ba7a-de6695444029": {
+      "ProjectGuid": "87479c32-3af0-4a98-ba7a-de6695444029",
+      "DisplayName": "FasticcoData",
+      "ColorIndex": 4
+    },
+    "9143e68a-a337-40bd-a1a1-e7f91b6e2b28": {
+      "ProjectGuid": "9143e68a-a337-40bd-a1a1-e7f91b6e2b28",
+      "DisplayName": "FasticcoBusiness",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 6
 }

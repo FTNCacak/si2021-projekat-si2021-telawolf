@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>87479c32-3af0-4a98-ba7a-de6695444029</ProjectGuid>
+    <ProjectGuid>29296730-48e3-4c59-8764-d44f049e4848</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FasticcoData</RootNamespace>
