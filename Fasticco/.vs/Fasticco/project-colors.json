@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0eb520f0-8d4e-4e6a-962f-68fd79dd88f4": {
+      "ProjectGuid": "0eb520f0-8d4e-4e6a-962f-68fd79dd88f4",
+      "DisplayName": "FasticcoPresentation",
+      "ColorIndex": 0
+    },
+    "457789cb-5abd-4e92-a702-ad40a3911e69": {
+      "ProjectGuid": "457789cb-5abd-4e92-a702-ad40a3911e69",
+      "DisplayName": "FasticcoBusiness",
+      "ColorIndex": 1
+    },
+    "68673ef4-a7b4-4bef-ba6d-2e1d1a59d4f9": {
+      "ProjectGuid": "68673ef4-a7b4-4bef-ba6d-2e1d1a59d4f9",
+      "DisplayName": "FasticcoData",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
