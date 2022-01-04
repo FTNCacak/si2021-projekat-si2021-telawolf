@@ -1,0 +1,27 @@
+﻿body {
+}
+
+.products{
+    width:100%;
+    display:flex;
+    background:#f00;
+}
+
+table{
+    width: 100%;
+}
+
+tbody{
+    width: 100%;
+}
+
+tr{
+    width: 100px;
+}
+td {
+    width: 40%;
+}
+
+.card{
+    width:auto;
+}

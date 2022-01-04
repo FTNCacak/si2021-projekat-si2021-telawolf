@@ -8,12 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Online poručivanje</title>
 
+
+
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/logo.png" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="css/style.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -59,8 +63,11 @@
             </div>
         </div>
         <div class="body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+            <div class="container">
+                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                 </asp:ContentPlaceHolder>
+            </div>
+           
             <footer class="footer">
                 <p>&copy; <%: DateTime.Now.Year %> - developed with love by telaWOLF</p>
             </footer>
