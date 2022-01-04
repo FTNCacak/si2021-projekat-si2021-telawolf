@@ -58,5 +58,36 @@ namespace FasticcoData
                 return command.ExecuteNonQuery();
             }
         }
+
+
+        public int InsertUser(User user)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("INSERT INTO Users VALUES('{0}','{1}','{2},'{3},'{4},'{5}')",
+                    user.Username, user.Name, user.LastName, user.Email, user.Phone, user.Address);
+
+                return command.ExecuteNonQuery();
+            }
+        }
+
+        public int InsertOrder(Order order)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("INSERT INTO Orders VALUES('{0}','{1}','{2},'{3},'{4}')",
+                    order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.OrderTime);
+
+                return command.ExecuteNonQuery();
+            }
+        }
     }
 }
