@@ -5,13 +5,5 @@ C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\Fasticc
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.dll
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.pdb
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.dll
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoPresentation.dll
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\System.Web.Optimization.dll
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\Microsoft.AspNet.FriendlyUrls.dll
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.pdb
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoPresentation.pdb
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoPresentation.dll.config
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\System.Web.Optimization.xml
-C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\Microsoft.AspNet.FriendlyUrls.xml
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CopyComplete

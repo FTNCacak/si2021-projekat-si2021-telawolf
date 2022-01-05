@@ -234,6 +234,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FasticcoBusiness\FasticcoBusiness.csproj">
+      <Project>{457789cb-5abd-4e92-a702-ad40a3911e69}</Project>
+      <Name>FasticcoBusiness</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FasticcoData\FasticcoData.csproj">
       <Project>{68673ef4-a7b4-4bef-ba6d-2e1d1a59d4f9}</Project>
       <Name>FasticcoData</Name>

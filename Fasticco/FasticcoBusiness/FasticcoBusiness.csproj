@@ -41,17 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FasticcoBusiness.cs" />
+    <Compile Include="FasticcoProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FasticcoData\FasticcoData.csproj">
       <Project>{68673ef4-a7b4-4bef-ba6d-2e1d1a59d4f9}</Project>
       <Name>FasticcoData</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FasticcoPresentation\FasticcoPresentation.csproj">
-      <Project>{0eb520f0-8d4e-4e6a-962f-68fd79dd88f4}</Project>
-      <Name>FasticcoPresentation</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

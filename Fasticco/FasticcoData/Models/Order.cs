@@ -12,8 +12,9 @@ namespace FasticcoData.Models
         public string OrderText { get; set; }
         public string Username { get; set; }
         public int OrderId { get; set; }
-        public decimal TotalPrice { get; set; }
-        public decimal Address { get; set; }
+        public double TotalPrice { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
         public string OrderTime { get; set; }
     }
 }

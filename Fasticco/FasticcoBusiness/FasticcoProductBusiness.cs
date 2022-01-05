@@ -8,7 +8,7 @@ using FasticcoData.Models;
 
 namespace FasticcoBusiness
 {
-    public class FasticcoBusiness
+    public class FasticcoProductBusiness
     {
         readonly FasticcoRepository fasticcoRepository = new FasticcoRepository();
 

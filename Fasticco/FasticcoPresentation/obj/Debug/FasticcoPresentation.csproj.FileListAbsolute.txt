@@ -148,3 +148,5 @@ C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\obj\Debug\Fas
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\obj\Debug\FasticcoPresentation.pdb
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoData.dll
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoData.pdb
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.dll
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.pdb
