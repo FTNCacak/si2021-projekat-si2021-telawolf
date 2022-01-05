@@ -4,6 +4,8 @@
 
     <div class="products row">
         
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+        
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Id" Width="1270px">
         <ItemTemplate>
                      Id:
@@ -20,8 +22,12 @@
             <br />
                     <input type="button" class="btn btn-primary addToCartBtn" name="addToCart_<%# Eval("Id") %>" value="Dodaj u korpu" />
                     <input type="hidden" id="id_<%# Eval("Id") %>" class="addToCartHiddenInput" name="productName_<%# Eval("Id") %>" value="<%# Eval("Name") %>">
-                    <input type="hidden" id="price_<%# Eval("Id") %>" class="productPriceHiddenInput" name="productPrice_<%# Eval("Id") %>" value="<%# Eval("Price") %>">
+                    <input type="hidden" id="<%# Eval("Name") %>" class="productPriceHiddenInput" name="productPrice_<%# Eval("Id") %>" value="<%# Eval("Price") %>">
         </ItemTemplate>
     </asp:DataList>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js">
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script src="js/app.js"></script>
+
+        </asp:Content>
