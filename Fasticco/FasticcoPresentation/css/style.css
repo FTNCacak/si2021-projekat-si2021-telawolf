@@ -30,3 +30,7 @@ td {
     align-items:center;
     padding:20px;
 }
+
+.textForOrder{
+    visibility: hidden;
+}

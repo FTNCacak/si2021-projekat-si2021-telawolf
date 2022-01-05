@@ -88,7 +88,10 @@ function cartData(cookie, cookie2) {
 
         }
         cartData += '<p>Ukuona cena: ' + cookie2 + '</p>';
-        cart.innerHTML=cartData;
+        cart.innerHTML = cartData;
+
+        var orderText = document.querySelector(".textForOrder");
+        orderText.value = cookie;
     }
 }
 

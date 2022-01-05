@@ -2,9 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
 
-    <div id="cart">
+         <div id="cart">
        
-    </div>
+        </div>
+
+        <asp:Button ID="sendOrder" runat="server" Text="Poruči"/>
+
+         <asp:TextBox ID="TextBox1" CssClass="textForOrder" runat="server"></asp:TextBox>
+
+
+
+
+
 
 
 
@@ -12,5 +21,4 @@
      <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="js/app.js"></script>
 
-
-</asp:Content>
+    </asp:Content>

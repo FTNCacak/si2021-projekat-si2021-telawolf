@@ -21,5 +21,10 @@ namespace FasticcoBusiness
         {
             return fasticcoRepository.InsertProduct(product) != 0;
         }
+
+        public bool InsertOrder(Order order)
+        {
+            return fasticcoRepository.InsertOrder(order) != 0;
+        }
     }
 }
