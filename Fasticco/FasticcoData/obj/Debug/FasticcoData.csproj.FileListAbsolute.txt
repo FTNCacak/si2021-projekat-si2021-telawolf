@@ -1,0 +1,6 @@
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\bin\Debug\FasticcoData.dll
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\bin\Debug\FasticcoData.pdb
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\obj\Debug\FasticcoData.csproj.AssemblyReference.cache
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\obj\Debug\FasticcoData.csproj.CoreCompileInputs.cache
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\obj\Debug\FasticcoData.dll
+C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoData\obj\Debug\FasticcoData.pdb
