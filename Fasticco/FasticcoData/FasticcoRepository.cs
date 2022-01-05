@@ -83,8 +83,8 @@ namespace FasticcoData
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = string.Format("INSERT INTO Orders VALUES('{0}','{1}','{2},'{3},'{4}')",
-                    order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.OrderTime);
+                command.CommandText = string.Format("INSERT INTO Orders VALUES('{0}','{1}','{2},'{3},'{4}','{5}')",
+                    order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.Address, order.OrderTime);
 
                 return command.ExecuteNonQuery();
             }
