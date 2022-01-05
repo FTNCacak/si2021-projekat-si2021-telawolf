@@ -14,6 +14,9 @@ namespace FasticcoPresentation
 
         }
 
-       
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
