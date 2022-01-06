@@ -150,3 +150,7 @@ C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoD
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoData.pdb
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.dll
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.pdb
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.dll
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoPresentation\bin\FasticcoData.dll
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoPresentation\bin\FasticcoBusiness.pdb
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoPresentation\bin\FasticcoData.pdb

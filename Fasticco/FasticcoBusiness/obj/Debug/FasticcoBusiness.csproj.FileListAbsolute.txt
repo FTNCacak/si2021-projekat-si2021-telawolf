@@ -7,3 +7,12 @@ C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\Fasticc
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.dll
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.pdb
 C:\Users\NT\Pictures\SI2021_FASTICCO\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CopyComplete
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoBusiness.dll
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoBusiness.pdb
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.dll
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.pdb
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.AssemblyReference.cache
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CopyComplete
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.dll
+C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.pdb
