@@ -33,7 +33,6 @@ namespace FasticcoPresentation
                 Password.Text == "" ||
                 PasswordConf.Text=="")
             {
-                // prikaži poruku da sva polja moraju biti popunjena
                 Response.Write("<script>alert('Molimo Vas da popunite sva polja.')</script>");
             }
             else if(Password.Text != PasswordConf.Text)

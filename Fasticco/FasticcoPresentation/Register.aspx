@@ -42,7 +42,7 @@
                 <label for="pwd">Potvrdite lozinku:</label>
                   <asp:TextBox ID="PasswordConf" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
-                <asp:Button ID="RegisterBtn" CssClass="btn btn-primary btnLogReg" runat="server" Text="Registruj se" OnClick="RegisterBtn_Click" />
+                <asp:Button ID="RegisterBtn" CssClass="btn btn-primary btnLogRegg" runat="server" Text="Registruj se" OnClick="RegisterBtn_Click" />
             </form>
 
         </div>

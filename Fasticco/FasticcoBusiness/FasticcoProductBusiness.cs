@@ -43,5 +43,17 @@ namespace FasticcoBusiness
                 return false;
             }
         }
+
+        public bool LoginUser(string username, string password)
+        {
+            if (fasticcoRepository.LoginUser(username, password))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

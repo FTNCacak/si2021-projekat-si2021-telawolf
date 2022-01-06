@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Prijava korisnika" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FasticcoPresentation.Login" %>
+﻿<%@ Page Title="Prijava korisnika" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="FasticcoPresentation.Login" EnableEventValidation="false"%>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row logReg">
@@ -11,13 +11,13 @@
             <form>
               <div class="form-group">
                 <label for="user">Korisničko ime:</label>
-                <input type="text" class="form-control" />
+                  <asp:TextBox ID="Username" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="pwd">Lozinka:</label>
-                <input type="password" class="form-control" id="pwd">
+                <asp:TextBox ID="Password" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
-              <button type="submit" class="btn btn-primary">Prijavite se</button>
+                <asp:Button ID="LoginBtn" runat="server" Text="Prijavite se" CssClass="btn btn-primary" OnClick="LoginBtn_Click" />
             </form>
 
         </div>

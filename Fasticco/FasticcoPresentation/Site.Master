@@ -60,7 +60,15 @@
                         <li><a runat="server" href="~/">Početna</a></li>
                         <li><a runat="server" href="~/About">O nama</a></li>
                         <li><a runat="server" href="~/Contact">Naruči</a></li>
-                        <li><button class="btn btn-primary btnLogReg" href="~/Contact">Registrujte se</button></li>
+                        
+                        <%if (System.Web.HttpContext.Current.Session["UserName"]== null){%>
+                        <li><a runat="server" href="~/Login">Uloguj se</a></li>
+                        <li><a runat="server" class="btn btn-primary btnLogReg" href="~/Register">Registruj se</a>
+                         <%}
+                        else {%>
+                         <li><button class="btn btn-primary btnLogReg" href="~/Contact">Profil</button></li>
+                          <asp:Button ID="LogOut" runat="server" Text="Odjavi se" OnClick="LogOut_Click" />
+                        <% }%>
                     </ul>
                 </div>
             </div>

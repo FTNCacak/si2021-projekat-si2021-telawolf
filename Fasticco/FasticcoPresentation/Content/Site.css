@@ -66,13 +66,22 @@ textarea {
     font-weight: 700;
     background-color: #0084ff;
     margin-top: 5px;
+    color:#ffffff !important;
 }
 
 .btnLogReg:hover {
-    background-color: 006acc;
+    background-color: #006acc;
+    color: #000000 !important;
     transition: 1s;
-}
+ }
 
+.btnLogRegg {
+    padding: 10px 20px;
+    font-weight: 700;
+    background-color: #0084ff;
+    margin-top: 5px;
+    color: #ffffff !important;
+}
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {

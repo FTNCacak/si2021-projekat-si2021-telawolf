@@ -31,7 +31,7 @@ namespace FasticcoData
                 while (dataReader.Read())
                 {
                     Product product = new Product();
-                    product.Id = dataReader.GetInt32(0);
+                    product.Id = dataReader.GetInt32(0); 
                     product.Name = dataReader.GetString(1);
                     product.Price = dataReader.GetDecimal(2);
                     product.Description = dataReader.GetString(3);
@@ -110,6 +110,37 @@ namespace FasticcoData
                 }
 
                 if(i > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+
+        public bool LoginUser(string username, string password)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("SELECT * FROM Users WHERE Username='{0}' AND Password='{1}'", username, password);
+
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                int i = 0;
+                while (dataReader.Read())
+                {
+                    i++;
+                }
+
+                if (i > 0)
                 {
                     return true;
                 }
