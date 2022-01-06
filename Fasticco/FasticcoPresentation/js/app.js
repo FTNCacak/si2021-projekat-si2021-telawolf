@@ -85,17 +85,46 @@ function cartData(cookie, cookie2) {
                 cartData += '<p>' + counts[element] + 'X ' + element + '</p><br />';
             }
             skip++;
-
         }
+
+        var orderTextData = '';
+        skip = 0;
+        for (var element in counts) {
+            if (skip > 0) {
+
+                orderTextData += counts[element] + 'X ' + element + ' / ';
+            }
+            skip++;
+        }
+
         cartData += '<p>Ukuona cena: ' + cookie2 + '</p>';
+        cartData += '<br/><input type="submit" class="btn btn-danger btnDeleteCart" name="deleteCookie" value="Isprazni korpu" />';
         cart.innerHTML = cartData;
 
         var orderText = document.querySelector(".textForOrder");
-        orderText.value = cookie;
+        var totalPrice = document.querySelector(".totalPriceHidden");
+
+        orderText.value = orderTextData;
+        totalPrice.value = cookie2;
     }
 }
 
-window.onload = cartData(Cookies.get("ProductName"), Cookies.get("TotalPrice"));
+
+function deleteCart() {
+    var btnDeleteCart = document.querySelector(".btnDeleteCart");
+    if (btnDeleteCart) {
+        btnDeleteCart.addEventListener('click', () => {
+            Cookies.remove('ProductName')
+            Cookies.remove('TotalPrice')
+            window.location.reload();
+        })
+    }
+}
+
 
 insertProductToCart();
+window.onload = cartData(Cookies.get("ProductName"), Cookies.get("TotalPrice"));
+deleteCart();
+
+
 
