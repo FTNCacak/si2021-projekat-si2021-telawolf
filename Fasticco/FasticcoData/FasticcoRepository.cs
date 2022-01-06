@@ -68,8 +68,8 @@ namespace FasticcoData
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = string.Format("INSERT INTO Users VALUES('{0}','{1}','{2},'{3},'{4},'{5}')",
-                    user.Username, user.Name, user.LastName, user.Email, user.Phone, user.Address);
+                command.CommandText = string.Format("INSERT INTO Users VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}')",
+                    user.Username, user.Name, user.LastName, user.Email, user.Phone, user.Address, user.Password);
 
                 return command.ExecuteNonQuery();
             }
@@ -87,6 +87,36 @@ namespace FasticcoData
                     order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.Address, order.Phone, order.OrderTime);
 
                 return command.ExecuteNonQuery();
+            }
+        }
+
+        public bool CheckUser(string usernameCheck)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("SELECT Username FROM Users WHERE Username='{0}'", usernameCheck);
+
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                int i = 0;
+                while (dataReader.Read())
+                {
+                    i++;
+                }
+
+                if(i > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
     }

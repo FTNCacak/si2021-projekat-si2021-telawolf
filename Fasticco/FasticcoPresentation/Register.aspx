@@ -1,4 +1,5 @@
-﻿<%@ Page Title="Registracija naloga" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="FasticcoPresentation.Register" %>
+﻿<%@ Page Title="Registracija naloga" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="FasticcoPresentation.Register" EnableEventValidation="false" %>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="row logReg">
@@ -11,36 +12,39 @@
             <form>
               <div class="form-group">
                 <label for="user">Korisničko ime:</label>
-                <input type="text" class="form-control" />
+                <asp:TextBox ID="Username" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
-                <label for="user">Ime i prezime:</label>
-                <input type="text" class="form-control" />
+                <label for="user">Ime:</label>
+                  <asp:TextBox ID="Name" runat="server" CssClass="form-control"></asp:TextBox>
+              </div>
+                 <div class="form-group">
+                <label for="user">Prezime:</label>
+                  <asp:TextBox ID="LastName" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="user">Mejl:</label>
-                <input type="email" class="form-control" />
+                  <asp:TextBox ID="Email" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="user">Telefon:</label>
-                <input type="text" class="form-control" />
+                  <asp:TextBox ID="Phone" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="user">Adresa:</label>
-                <input type="text" class="form-control" />
+                  <asp:TextBox ID="Address" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="pwd">Lozinka:</label>
-                <input type="password" class="form-control" id="pwd">
+                  <asp:TextBox ID="Password" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="pwd">Potvrdite lozinku:</label>
-                <input type="password" class="form-control" id="pwd">
+                  <asp:TextBox ID="PasswordConf" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
-              <button type="submit" class="btn btn-primary btnLogReg">Registrujte se</button>
+                <asp:Button ID="RegisterBtn" CssClass="btn btn-primary btnLogReg" runat="server" Text="Registruj se" OnClick="RegisterBtn_Click" />
             </form>
 
         </div>
     </div>
-
 </asp:Content>

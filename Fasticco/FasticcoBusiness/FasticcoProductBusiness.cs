@@ -26,5 +26,22 @@ namespace FasticcoBusiness
         {
             return fasticcoRepository.InsertOrder(order) != 0;
         }
+
+        public bool InsertUser(User user)
+        {
+            return fasticcoRepository.InsertUser(user) != 0;
+        }
+
+        public bool CheckUser(string usernameCheck)
+        {
+            if (fasticcoRepository.CheckUser(usernameCheck))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
