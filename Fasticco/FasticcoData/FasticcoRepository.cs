@@ -162,14 +162,21 @@ namespace FasticcoData
             SqlCommand command = null;
             using (sqlConnection = new SqlConnection(connString))
             {
-                sqlConnection.Open();
+                try
+                {
+                    sqlConnection.Open();
 
-                command = new SqlCommand();
-                command.Connection = sqlConnection;
-                command.CommandText = string.Format("UPDATE Orders SET Status='{0}' WHERE Id = {1}", status, orderId);
-  
-                SqlDataReader dataReader = command.ExecuteReader();
-                return command.ExecuteNonQuery();
+                    command = new SqlCommand();
+                    command.Connection = sqlConnection;
+                    command.CommandText = string.Format("UPDATE Orders SET Status='{0}' WHERE Id = {1}", status, orderId);
+
+                    SqlDataReader dataReader = command.ExecuteReader();
+                    return command.ExecuteNonQuery();
+                }
+                catch
+                {
+                    return -1;
+                }
 
             }
         }

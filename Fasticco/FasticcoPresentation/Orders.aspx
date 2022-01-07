@@ -74,9 +74,15 @@
                     <br />
                       Status porudžbine:
                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Status") %>' />
+
                     <br />
-                    <a href="Orders?OrderId=<%# Eval("Id") %>">AAAA</a>
-<br />
+                    <% if(Eval("Status") == "0")
+                        {%>
+                    <a class="btn btn-success" style="display:block;margin-top: 20px;" href="Orders?OrderId=<%# Eval("Id") %>">Prihvati porudžbinu</a>
+                     <%}
+                         else {%>
+                   <a class="btn btn-info" style="display:block;margin-top: 20px;" href="#">Porudžbina je prihvacena</a>
+                      <%}%>
                 </ItemTemplate>
             </asp:DataList>
 
