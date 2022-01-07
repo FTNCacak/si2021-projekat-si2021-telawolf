@@ -55,5 +55,10 @@ namespace FasticcoBusiness
                 return false;
             }
         }
+
+        public bool OrderStatus(string orderId, string status)
+        {
+            return fasticcoRepository.OrderStatus(orderId, status) != 0;
+        }
     }
 }

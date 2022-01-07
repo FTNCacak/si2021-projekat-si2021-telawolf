@@ -45,7 +45,8 @@ namespace FasticcoPresentation
                     TotalPrice = Convert.ToInt32(TotalPrice.Text),
                     Address = Address.Text,
                     Phone = UserPhone.Text,
-                    OrderTime = localDate.ToString()
+                    OrderTime = localDate.ToString(),
+                    Status = "0"
                 };
                 fasticcoBusiness.InsertOrder(order);
 

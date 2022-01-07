@@ -11,7 +11,7 @@ namespace FasticcoData
 {
     public class FasticcoRepository
     {
-        private string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=RestaurantDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=RestaurantDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true";
 
         public List<Product> GetAllProducts()
         {
@@ -38,6 +38,7 @@ namespace FasticcoData
          
                     productList.Add(product);
                 }
+                dataReader.Close();
             }
 
             return productList;
@@ -83,8 +84,8 @@ namespace FasticcoData
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = string.Format("INSERT INTO Orders VALUES('{0}','{1}',{2},{3},'{4}','{5}','{6}')",
-                    order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.Address, order.Phone, order.OrderTime);
+                command.CommandText = string.Format("INSERT INTO Orders VALUES('{0}','{1}',{2},{3},'{4}','{5}','{6}','{7}')",
+                    order.OrderText, order.Username, order.OrderId, order.TotalPrice, order.Address, order.Phone, order.OrderTime, order.Status);
 
                 return command.ExecuteNonQuery();
             }
@@ -111,10 +112,12 @@ namespace FasticcoData
 
                 if(i > 0)
                 {
+                    dataReader.Close();
                     return true;
                 }
                 else
                 {
+                    dataReader.Close();
                     return false;
                 }
             }
@@ -142,12 +145,32 @@ namespace FasticcoData
 
                 if (i > 0)
                 {
+                    dataReader.Close();
                     return true;
                 }
                 else
                 {
+                    dataReader.Close();
                     return false;
                 }
+            }
+        }
+
+        public int OrderStatus(string orderId, string status)
+        {
+            SqlConnection sqlConnection = null;
+            SqlCommand command = null;
+            using (sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("UPDATE Orders SET Status='{0}' WHERE Id = {1}", status, orderId);
+  
+                SqlDataReader dataReader = command.ExecuteReader();
+                return command.ExecuteNonQuery();
+
             }
         }
     }
