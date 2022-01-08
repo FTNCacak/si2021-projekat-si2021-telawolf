@@ -1,24 +1,17 @@
 ﻿<%@ Page Title="Proleće" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="FasticcoPresentation._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="products row">
+    <div class="container">
+         <div class="products row">
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
         
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Id" Width="1270px">
         <ItemTemplate>
-                     Id:
-                    <asp:Label ID="IdLabel" runat="server" Text='<%# Eval("Id") %>' />
-                    <br />
-                    Name:
-                    <asp:Label ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
-                    <br />
-                    Price:
-                    <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
-                    <br />
-                    Description:
-                    <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
+                
+                    <asp:Label CssClass="productName" ID="NameLabel" runat="server" Text='<%# Eval("Name") %>' />
+                    <asp:Label CssClass="productPrice" ID="PriceLabel" runat="server" Text=<%# String.Format("{0} {1} {2}","Cena: ", Eval("Price"),"rsd." ) %> />
+                    <asp:Label CssClass="productDescription" ID="DescriptionLabel" runat="server"  Text=<%# String.Format("{0} {1}","Opis: ", Eval("Description")) %> />
             <br />
                     <input type="button" class="btn btn-primary addToCartBtn" name="addToCart_<%# Eval("Id") %>" value="Dodaj u korpu" />
                     <input type="hidden" id="id_<%# Eval("Id") %>" class="addToCartHiddenInput" name="productName_<%# Eval("Id") %>" value="<%# Eval("Name") %>">
@@ -26,6 +19,8 @@
         </ItemTemplate>
     </asp:DataList>
     </div>
+    </div>
+   
     
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="js/app.js"></script>
