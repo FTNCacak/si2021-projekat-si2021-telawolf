@@ -53,7 +53,7 @@ namespace FasticcoData
 
                 SqlCommand command = new SqlCommand();
                 command.Connection = sqlConnection;
-                command.CommandText = string.Format("INSERT INTO Products VALUES('{0}','{1}','{2}')",
+                command.CommandText = string.Format("INSERT INTO Products VALUES('{0}',{1},'{2}')",
                     product.Name, product.Price, product.Description);
 
                 return command.ExecuteNonQuery();
