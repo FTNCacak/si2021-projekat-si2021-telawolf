@@ -2,6 +2,7 @@
 body {
     padding-top: 100px;
     padding-bottom: 20px;
+    font-family: 'Yu Gothic'
 }
 
 /* Wrapping element */
@@ -43,6 +44,7 @@ textarea {
 
 .navCustom a:hover {
     transition: 1s;
+    background-color: transparent;
 }
 
 .footer {
@@ -65,15 +67,15 @@ textarea {
     padding: 10px 20px;
     font-weight: 700;
     background-color: #0084ff;
-    margin-top: 5px;
-    color:#ffffff !important;
+    color: #ffffff !important;
+    border-radius: 10px;
 }
 
-.btnLogReg:hover {
-    background-color: #006acc;
-    color: #000000 !important;
-    transition: 1s;
- }
+    .btnLogReg:hover {
+        background-color: #0065c4;
+        color: #000000 !important;
+        transition: 3s;
+    }
 
 .btnLogRegg {
     padding: 10px 20px;
@@ -81,8 +83,60 @@ textarea {
     background-color: #0084ff;
     margin-top: 5px;
     color: #ffffff !important;
+    border: none;
     margin-top: 10px;
+    border-radius: 10px;
 }
+
+.btnLogReg:hover {
+    background-color: #00519e;
+}
+
+.profilePage {
+    min-height: 80vh;
+    margin-top: 50px;
+}
+
+.profilePage .name {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+    .profilePage .username {
+        font-size: 26px;
+        font-weight: 700;
+        color: #c9c9c9;
+    }
+
+    .profilePage .mail {
+        margin-top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .profilePage .phone {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .profilePage .orderBtn {
+        padding: 14px 20px;
+        font-weight: 700;
+        background-color: #EB5757;
+        margin-top: 5px;
+        color: #ffffff !important;
+        margin-top: 50px;
+        border: none;
+        font-size: 18px;
+        border-radius: 10px;
+    }
+
+    .profilePage .orderBtn:hover {
+        background-color: #d43535;
+        transition: 1s;
+    }
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
     .jumbotron {
