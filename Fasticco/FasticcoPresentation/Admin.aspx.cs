@@ -10,7 +10,8 @@ using FasticcoBusiness;
 
 namespace FasticcoPresentation
 {
-    public partial class Login : System.Web.UI.Page
+
+    public partial class Admin : System.Web.UI.Page
     {
         readonly FasticcoProductBusiness fasticcoBusiness = new FasticcoProductBusiness();
         protected void Page_Load(object sender, EventArgs e)
@@ -18,21 +19,18 @@ namespace FasticcoPresentation
 
         }
 
-        protected void LoginBtn_Click(object sender, EventArgs e)
+        protected void adminLogin_Click(object sender, EventArgs e)
         {
-            LoginBtn_Click(sender, e, Session);
-        }
-
-        protected void LoginBtn_Click(object sender, EventArgs e, System.Web.SessionState.HttpSessionState session)
-        {
-          if(fasticcoBusiness.LoginUser(Username.Text, Password.Text)){
-                Session["UserName"] = Username.Text;
-                Response.Redirect("Default.aspx");
-          }
+            if (fasticcoBusiness.LoginAdmin(AdminName.Text, AdminPassword.Text))
+            {
+                Session["AdminName"] = AdminName.Text;
+                Response.Redirect("cpanel.aspx");
+            }
             else
             {
                 Response.Write("<script>alert('Korisničko ime i lozinka se ne podudaraju.')</script>");
             }
         }
     }
+    
 }

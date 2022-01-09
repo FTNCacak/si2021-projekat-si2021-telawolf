@@ -60,5 +60,17 @@ namespace FasticcoBusiness
         {
             return fasticcoRepository.OrderStatus(orderId, status) != 0;
         }
+
+        public bool LoginAdmin(string adminName, string adminPassword)
+        {
+            if (fasticcoRepository.LoginAdmin(adminName, adminPassword))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

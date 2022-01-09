@@ -180,5 +180,37 @@ namespace FasticcoData
 
             }
         }
+
+        public bool LoginAdmin(string adminName, string adminPassword)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("SELECT * FROM Admin WHERE AdminName='{0}' AND AdminPassword='{1}'", adminName, adminPassword);
+
+
+                SqlDataReader dataReader = command.ExecuteReader();
+
+                int i = 0;
+                while (dataReader.Read())
+                {
+                    i++;
+                }
+
+                if (i > 0)
+                {
+                    dataReader.Close();
+                    return true;
+                }
+                else
+                {
+                    dataReader.Close();
+                    return false;
+                }
+            }
+        }
     }
 }

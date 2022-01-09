@@ -42,10 +42,15 @@
     </style>
 </head>
 <body>
+      <%if (System.Web.HttpContext.Current.Session["AdminName"]!= null){%>
         <form id="form1" runat="server">
         <div class="orders">
 
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString2 %>" SelectCommand="SELECT * FROM [Orders]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString2 %>" SelectCommand="SELECT * FROM [Orders] WHERE ([Status] = @Status)">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="0" Name="Status" Type="String" />
+                </SelectParameters>
+            </asp:SqlDataSource>
             <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
                 <ItemTemplate>
                     Id:
@@ -71,22 +76,16 @@
                     <br />
                     Vreme poručivanja:
                     <asp:Label ID="OrderTimeLabel" runat="server" Text='<%# Eval("OrderTime") %>' />
-                    <br />
-                      Status porudžbine:
-                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Status") %>' />
-
-                    <br />
-                    <% if(Eval("Status") == "0")
-                        {%>
-                    <a class="btn btn-success" style="display:block;margin-top: 20px;" href="Orders?OrderId=<%# Eval("Id") %>">Prihvati porudžbinu</a>
-                     <%}
-                         else {%>
-                   <a class="btn btn-info" style="display:block;margin-top: 20px;" href="#">Porudžbina je prihvacena</a>
-                      <%}%>
+                    <br />                        <a class="btn btn-success" style="display:block;margin-top: 20px;" href="Orders?OrderId=<%# Eval("Id") %>">Prihvati porudžbinu</a>
                 </ItemTemplate>
             </asp:DataList>
 
         </div>
         </form>
+
+       <%}
+           else {%>
+              <p>Greška!</p>
+           <% }%>
 </body>
 </html>

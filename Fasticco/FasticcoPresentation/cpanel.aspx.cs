@@ -33,8 +33,8 @@ namespace FasticcoPresentation
             ProductName.Text = "";
             ProductPrice.Text = "";
             ProductDescription.Text = "";
-            Response.Write("<script>alert('Uspešno dodavanje proizvoda!')</script>");
-            
+            Response.Redirect("cpanel.aspx");
+
         }
     }
 }

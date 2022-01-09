@@ -6,7 +6,7 @@
 
 .products{
     width:100%;
-    margin-top: 150px;
+    margin-top: 40px;
 }
 
 table {
@@ -18,6 +18,7 @@ tbody {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
 }
 
 tr{
@@ -32,6 +33,7 @@ td {
     padding: 20px;
     border-radius: 20px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+    margin-top:30px;
 }
 
 .productName{
@@ -58,6 +60,8 @@ td {
 
 
 
+
+
 #cart {
     width: 100%;
     margin-top: 50px;
@@ -67,7 +71,7 @@ td {
 
 .title{
     display: block;
-    margin-top:150px;
+    margin-top:40px;
 }
 
 .userInfo {
@@ -79,3 +83,19 @@ td {
     flex-direction:column;
     align-items: center;
 }
+
+.segment-title{
+    margin-top: 40px;
+    font-size:20px;
+    font-weight: bold;
+}
+
+.btn-top-margin{
+    display:block;
+    margin-top: 8px;
+}
+
+.btn-add-product{
+    width: 100%;
+}
+
