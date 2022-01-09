@@ -6,7 +6,7 @@
         <asp:Label ID="Label1" runat="server" Text="Korisničko ime"></asp:Label>
         <asp:TextBox ID="AdminName" CssClass="form-control" runat="server"></asp:TextBox>
         <asp:Label ID="Label2" runat="server" Text="Lozinka"></asp:Label>
-        <asp:TextBox ID="AdminPassword" CssClass="form-control" runat="server"></asp:TextBox>
+        <asp:TextBox ID="AdminPassword" TextMode="Password" CssClass="form-control" runat="server"></asp:TextBox>
         <asp:Button ID="adminLogin" runat="server" Text="Uloguj se" CssClass="btn btn-primary btnLogRegg" OnClick="adminLogin_Click" />
     </div>
     </div>

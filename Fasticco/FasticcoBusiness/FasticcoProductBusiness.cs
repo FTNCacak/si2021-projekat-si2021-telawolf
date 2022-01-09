@@ -72,5 +72,10 @@ namespace FasticcoBusiness
                 return false;
             }
         }
+
+        public User GetUserData(string username)
+        {
+            return fasticcoRepository.GetUserData(username);
+        }
     }
 }

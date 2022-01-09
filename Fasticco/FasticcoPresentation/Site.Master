@@ -67,8 +67,8 @@
                         <li><a runat="server" class="btn btn-primary btnLogReg" href="~/Register">Registruj se</a>
                          <%}
                         else {%>
-                         <li><button class="btn btn-primary btnLogReg" href="~/Contact">Profil</button></li>
-                          <asp:Button ID="LogOut" runat="server" Text="Odjavi se" OnClick="LogOut_Click" />
+                         <li><a runat="server" class="btn btn-primary btnLogReg" href="~/Profile">Profil</a></li>
+                          <asp:Button CssClass="btn btn-info logOutBtn" ID="LogOut" runat="server" Text="Odjavi se" OnClick="LogOut_Click" />
                         <% }%>
                     </ul>
                 </div>

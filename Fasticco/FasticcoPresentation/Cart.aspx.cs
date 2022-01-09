@@ -36,7 +36,6 @@ namespace FasticcoPresentation
             else
             {
                 DateTime localDate = DateTime.Now;
-                string cultureNames = "en-GB";
                 Order order = new Order()
                 {
                     OrderText = TextBox1.Text,

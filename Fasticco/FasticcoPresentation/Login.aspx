@@ -15,7 +15,7 @@
               </div>
               <div class="form-group">
                 <label for="pwd">Lozinka:</label>
-                <asp:TextBox ID="Password" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
                 <asp:Button ID="LoginBtn" runat="server" Text="Prijavite se" CssClass="btn btn-primary" OnClick="LoginBtn_Click" />
             </form>

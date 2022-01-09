@@ -212,5 +212,36 @@ namespace FasticcoData
                 }
             }
         }
+
+
+        public User GetUserData(string username)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(connString))
+            {
+                sqlConnection.Open();
+
+                SqlCommand command = new SqlCommand();
+                command.Connection = sqlConnection;
+                command.CommandText = string.Format("SELECT * FROM Users WHERE Username='{0}'", username);
+
+
+                SqlDataReader dataReader = command.ExecuteReader();
+                User user = new User();
+
+                while (dataReader.Read())
+                {
+                    user.Id = dataReader.GetInt32(0);
+                    user.Username = dataReader.GetString(1);
+                    user.Name = dataReader.GetString(2);
+                    user.LastName = dataReader.GetString(3);
+                    user.Email = dataReader.GetString(4);
+                    user.Phone = dataReader.GetString(5);
+                    user.Address = dataReader.GetString(6);
+                }
+
+                return user;
+            }
+        }
+
     }
 }

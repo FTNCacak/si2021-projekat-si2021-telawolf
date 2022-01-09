@@ -36,13 +36,13 @@
               </div>
               <div class="form-group">
                 <label for="pwd">Lozinka:</label>
-                  <asp:TextBox ID="Password" runat="server" CssClass="form-control"></asp:TextBox>
+                  <asp:TextBox ID="Password" TextMode="Password" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="pwd">Potvrdite lozinku:</label>
                   <asp:TextBox ID="PasswordConf" runat="server" CssClass="form-control"></asp:TextBox>
               </div>
-                <asp:Button ID="RegisterBtn" CssClass="btn btn-primary btnLogRegg" runat="server" Text="Registruj se" OnClick="RegisterBtn_Click" />
+                <asp:Button ID="RegisterBtn" TextMode="Password" CssClass="btn btn-primary btnLogRegg" runat="server" Text="Registruj se" OnClick="RegisterBtn_Click" />
             </form>
 
         </div>
