@@ -2,7 +2,17 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container" style="min-height:80vh;">
-         <div class="products row">
+
+        <div class="restaurantInfo">
+            <img src="img/logo.jpg" alt="Alternate Text" />
+            <div class="infos">
+                 <p class="restaurantName">Proleće</p>
+                <p>Adresa: <b>Župana Stacimira, Čačak</b></p>
+                <p>Telefon: <b>032 341852</b></p>
+            </div>
+        </div>
+
+         <div class="products">
         
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
         
