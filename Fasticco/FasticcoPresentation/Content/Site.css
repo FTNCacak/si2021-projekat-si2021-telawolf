@@ -39,7 +39,7 @@ textarea {
 .navbar-text {
     font-size: 20px;
     font-weight: 200;
-    color: #00229e;
+    color: #84C14C;
 }
 
 .navCustom a:hover {
@@ -66,9 +66,10 @@ textarea {
 .btnLogReg {
     padding: 10px 20px;
     font-weight: 700;
-    background-color: #0084ff;
-    color: #ffffff !important;
+    background-color: #84C14C;
+    color: #000 !important;
     border-radius: 10px;
+    border: 1px solid #84C14C;
 }
 
     .btnLogReg:hover {

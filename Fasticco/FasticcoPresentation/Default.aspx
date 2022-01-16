@@ -6,7 +6,6 @@
         <div class="restaurantInfo">
             <img src="img/logo.jpg" alt="Alternate Text" />
             <div class="infos">
-                 <p class="restaurantName">Proleće</p>
                 <p>Adresa: <b>Župana Stacimira, Čačak</b></p>
                 <p>Telefon: <b>032 341852</b></p>
             </div>
@@ -14,7 +13,7 @@
 
          <div class="products">
         
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDB3ConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
         
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Id" Width="1270px">
         <ItemTemplate>
@@ -34,5 +33,4 @@
     
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
     <script src="js/app.js"></script>
-
-        </asp:Content>
+    </asp:Content>

@@ -58,7 +58,15 @@ td {
     visibility: hidden;
 }
 
+.aboutUs h2 {
+    color: #84C14C;
+    font-weight: 700;
+}
 
+.ponudaDana h2 {
+    color: #84C14C;
+    font-weight: 700;
+}
 
 
 
@@ -100,23 +108,29 @@ td {
     width: 100%;
 }
 
-.restaurantInfo{
-    width:100%;
+.restaurantInfo {
+    width: 100%;
     display: flex;
     align-items: center;
+    background: url("../pocetnaSlika.jpg");
+    background-size: cover;
+    color: #fff;
+    border-radius: 10px;
 }
 
-.restaurantInfo img{
-    width:200px;
-}
+    .restaurantInfo img {
+        width: 200px;
+        border-radius: 10px;
+    }
 
 .infos {
     margin-left: 40px;
+    font-size: 24px;
 }
 
 .restaurantName{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 36px;
 }
 
 

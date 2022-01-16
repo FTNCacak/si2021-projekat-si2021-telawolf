@@ -19,6 +19,7 @@ function insertProductToCart() {
             var cookieValue = Cookies.get("ProductName") + "-" + productName;
             Cookies.set("ProductName", cookieValue, { expires: 1 });
             readCookie(Cookies.get("ProductName"));
+            console.log(22);
         })
     })
 
@@ -92,12 +93,12 @@ function cartData(cookie, cookie2) {
         for (var element in counts) {
             if (skip > 0) {
 
-                orderTextData += counts[element] + 'X ' + element + ' / ';
+                orderTextData += counts[element] + 'x ' + element + ' / ';
             }
             skip++;
         }
 
-        cartData += '<p>Ukuona cena: ' + cookie2 + '</p>';
+        cartData += '<p>Ukupna cena: ' + cookie2 + '</p>';
         cartData += '<br/><input type="submit" class="btn btn-danger btnDeleteCart" name="deleteCookie" value="Isprazni korpu" />';
         cart.innerHTML = cartData;
 

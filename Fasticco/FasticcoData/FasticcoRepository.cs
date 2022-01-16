@@ -11,7 +11,7 @@ namespace FasticcoData
 {
     public class FasticcoRepository
     {
-        private string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=RestaurantDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;MultipleActiveResultSets=true";
+        private string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=RestaurantDB3;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         public List<Product> GetAllProducts()
         {
