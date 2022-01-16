@@ -13,7 +13,7 @@
 
          <div class="products">
         
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDB3ConnectionString %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString3 %>" SelectCommand="SELECT * FROM [Products]"></asp:SqlDataSource>
         
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" DataKeyField="Id" Width="1270px">
         <ItemTemplate>

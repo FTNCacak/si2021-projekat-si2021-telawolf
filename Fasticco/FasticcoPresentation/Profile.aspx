@@ -12,6 +12,31 @@
         tr{
         width: 100%;
         }
+
+        .profileInfo{
+            width:100%;
+            display:flex;
+        }
+
+
+        .profileInfo div{
+            margin-left: 30px;
+        }
+
+        @media only screen and (max-width: 600px) {
+
+          .profileInfo{
+           flex-direction: column;
+        }
+
+        .profileInfo div{
+            margin-left:0;
+            margin-top:30px;
+            width:100%;
+        }
+        }
+
+
     </style>
     <div class="container profilePage">
         
@@ -23,11 +48,11 @@
             
             <asp:DataList ID="DataList1" runat="server" DataKeyField="Id" DataSourceID="SqlDataSource1">
                 <ItemTemplate>
-                      <div class="row">
-            <div class="col-md-6">
+                      <div class="profileInfo">
+            <div>
                 <img src="profile.png" />
             </div>
-                     <div class="col-md-6">
+                     <div>
                         <div class="name"> <%# Eval("Name") %> <%# Eval("LastName") %></div>
                         <div class="username"><%# Eval("Username") %></div>
                         <div class="mail"><img src="letter.png" /> <%# Eval("Email") %></div>

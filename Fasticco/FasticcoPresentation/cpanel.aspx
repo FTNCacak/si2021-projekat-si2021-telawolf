@@ -61,10 +61,7 @@
            
            <%}
            else {%>
-              <p>Greška!<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDB3ConnectionString %>" SelectCommand="SELECT * FROM [Admin] WHERE ([AdminName] = @AdminName)">
-                  <SelectParameters>
-                      <asp:SessionParameter Name="AdminName" SessionField="AdminName" Type="String" />
-                  </SelectParameters>
+              <p>Greška!<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:RestaurantDBConnectionString3 %>" SelectCommand="SELECT * FROM [Products]">
                   </asp:SqlDataSource>
            </p>
            <% }%>

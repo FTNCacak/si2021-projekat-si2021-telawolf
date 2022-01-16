@@ -72,7 +72,7 @@ namespace FasticcoPresentation
                     Password = Password.Text
                 };
                 fasticcoBusiness.InsertUser(user);
-                Response.Write("<script>alert('Uspešna registracija!')</script>");
+                Response.Redirect("Default.aspx");
             }
 
         }

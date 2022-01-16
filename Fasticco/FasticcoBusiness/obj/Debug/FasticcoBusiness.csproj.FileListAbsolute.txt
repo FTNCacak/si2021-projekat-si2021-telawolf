@@ -16,3 +16,12 @@ C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusine
 C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CopyComplete
 C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.dll
 C:\Users\Marko\Documents\si2021-projekat-si2021-telawolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.pdb
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoBusiness.dll
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoBusiness.pdb
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.dll
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\bin\Debug\FasticcoData.pdb
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.AssemblyReference.cache
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CoreCompileInputs.cache
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.csproj.CopyComplete
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.dll
+C:\Users\Marija\Pictures\TelaWolf\Fasticco\FasticcoBusiness\obj\Debug\FasticcoBusiness.pdb
