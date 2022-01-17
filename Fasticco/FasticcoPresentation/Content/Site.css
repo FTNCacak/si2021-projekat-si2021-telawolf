@@ -19,6 +19,15 @@ textarea {
     max-width: 280px;
 }
 
+.navbar-toggle {
+    border: 1px solid #84C14C;
+}
+
+.icon-bar {
+    color: #000;
+    background: #000;
+}
+
 .navCustom {
     background-color: #fff;
     padding-bottom: 20px;
